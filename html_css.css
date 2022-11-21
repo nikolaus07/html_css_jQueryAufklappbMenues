@@ -1,0 +1,118 @@
+body  {
+  font-family: Arial, Helvetica, sans-serif;
+  style="clear: both;"
+}
+
+* {
+margin: 0;
+padding: 0;
+}
+
+
+.text {
+   margin-left: 80px;
+   font-weight:bold;
+   font-size: 120%;
+   color: blue;
+   margin-top: 10px;
+}
+
+.text_kleiner {
+  font-weight:light;
+   font-size: 80%;
+}
+
+.menu {
+position: absolute;
+top: 40px;
+left: 80px;
+/* width: 100%; */
+padding: 0 1px;
+background: white;
+font-family: Verdana;
+font-size: 1em;
+line-height: 1.5;
+float: left;
+}
+
+.menu ul {
+float: left;  /* bei Center ist H-menu untereinander */
+width: 190px;
+list-style-type: none;
+}
+
+.menu h3 {
+font-size: 1em;
+text-align: center;
+color: blue;
+border: 1px solid #003366; /*--erforderlich f?r IE 7--*/
+background: yellow;
+}
+
+.menu h4 {
+font-size: 12px;
+text-align: left;
+color: black;
+border: 1px solid #003366; /*--erforderlich f?r IE 7--*/
+background: grey;
+}
+
+/* Untermenue "also Drop-Down-Links" */
+.menu a {
+text-decoration: none;  font-weight: bold;
+display: block;         border: 1px solid gray;       font-size: 1em;
+text-align: center;     color: blue;                  background: yellow;
+}
+
+/* Untermenue "Drop-Down-Links" im Hoverzustand--*/
+.menu a:hover {
+color: yellow;
+background: blue;
+}
+
+/*--versteckt Untermenu "Drop-Down-Links"  LERN  bei relativ verschibt sich beim Hoovern alles nach unten deswegen unbedingt auf absolute belassen */
+.menu ul ul {
+position: absolute;
+display: none;
+}
+
+/*--l?sst die Dropdown-Links beim Hovern erscheinen--*/
+.menu ul ul  :hover {
+display: block;
+background: blue;
+}
+
+/*--laesst die Dropdown-Links beim Hovern erscheinen--*/
+.menu ul li:hover ul {
+display: block;
+background: green;
+}
+
+/* Einzellink, ohne Drop-Down
+#menu a:hover wird hier ueberschrieben */
+.menu a.direkt:link {
+font-size: 1em;
+font-weight: bold;
+text-align: center;
+color: blue;
+border: 1px solid #003366;
+background: yellow;
+}
+
+/*  Einzellink, ohne Drop-Down */
+.menu a.direkt:hover {
+color: yellow;
+background: blue;
+border: 1px solid #ccc;
+}
+
+#frame1 {
+         margin: 5px;  /* Rand nach aussen */
+         border:0px solid #00FFFF; /* Rand gemalt */
+         width:1000px;   /* Breite       */
+         padding:5px;   /* Rand innen   */
+         background: white;
+         position: absolute;
+         top: 50px;   left: 5px;
+         z-index:-6;
+}
